@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* Container for the main content */
+        .main-content {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        /* Left section styling */
+        .left-section {
+            width: 30%;
+        }
+
+        /* Right section styling with two subsections */
+        .right-section {
+            display: flex;
+            flex-direction: column;
+            width: 30%;
+            gap: 20px;
+        }
+
+        .third-section {
+            width: 30%;
+        }
+
+
+        /* Styling for articles in both sections */
+        .article {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            border-bottom: 1px solid gray;
+            padding-bottom: 15px;
+        }
+
+        .article img {
+            width: 100%;
+            height: auto;
+        }
+
+        .article h2 {
+            font-size: 18px;
+            color: black;
+            margin: 0;
+        }
+
+        .article h2 a {
+            color: black;
+            text-decoration: none;
+        }
+
+        .article h2 a:hover {
+            text-decoration: underline;
+        }
+
+        /* Styling for footer */
+        footer {
+            background-color: black;
+            color: white;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        footer img {
+            height: 20px;
+            margin-right: 10px;
+        }
+
+        .article-container {
+            display: flex;
+            width: 300px;
+            border: 1px #ccc;
+            padding: 3px;
+            box-sizing: border-box;
+            align-items: center;
+            margin: 0px 0px 0px 0px;
+        }
+
+        .article-text {
+            flex: 1;
+            font-size: 8px;
+            margin-right: 10px;
+            color: black;
+            text-decoration-line: none;
+        }
+
+        .article-image {
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header with logo and navigation -->
+    <div style="text-align: center;">
+        <img src="https://www.dawn.com/_img/logo.png" alt="Dawn" width="150">
+        <div><a href="https://epaper.dawn.com" style="color: black;">E-Paper | October 23, 2024</a></div>
+    </div>
+
+    <hr size="5" color="black" width="90%">
+
+    <nav style="text-align: center; margin-bottom: 10px;  ">
+        <a href="//www.dawn.com" style="color:black; text-decoration-line: none;">Home</a> |
+        <a href="/latest-news" style="color:black; text-decoration-line: none;">Latest</a> |
+        <a href="https://www.dawn.com/trends/gaza-invasion" style="color:black; text-decoration-line: none;">Gaza
+            siege</a> |
+        <a href="https://images.dawn.com/trends/breast-cancer"
+            style="color:black; text-decoration-line: none;">Pinktober</a> |
+        <a href="/pakistan" style="color:black; text-decoration-line: none;">Pakistan</a> |
+        <a href="/opinion" style="color:black; text-decoration-line: none;">Opinion</a> |
+        <a href="/business" style="color:black; text-decoration-line: none;">Business</a> |
+        <a href="/entertainment" style="color:black; text-decoration-line: none;">Images</a> |
+        <a href="/prism" style="color:black; text-decoration-line: none;">Prism</a> |
+        <a href="/world" style="color:black; text-decoration-line: none;">World</a> |
+        <a href="/sport" style="color:black; text-decoration-line: none;">Sport</a> |
+        <a href="/magazines" style="color:black; text-decoration-line: none;">Magazines</a> |
+        <a href="/tech" style="color:black; text-decoration-line: none;">Tech</a> |
+        <a href="/videos" style="color:black; text-decoration-line: none;">Videos</a> |
+        <a href="/popular" style="color:black; text-decoration-line: none;">Popular</a> |
+        <a href="/newspaper" style="color:black; text-decoration-line: none;">Archive</a> |
+        <a href="https://www.dawnrelief.com/" style="color:black; text-decoration-line: none;">Flood Donations</a>
+    </nav>
+
+    <hr size="2" color="grey" width="90%">
+    <br>
+    <br>
+
+    <div class="main-content">
+        <!-- Left Section -->
+        <div class="left-section">
+            <div class="article">
+                <h2><a href="https://www.dawn.com/live/gaza-invasion">US, Qatar announce new Gaza talks as Blinken eyes
+                        new options</a></h2>
+                <img src="https://i.dawn.com/medium/2024/10/24200001b1ca339.jpg?r=200019"
+                    alt="US, Qatar announce new Gaza talks">
+                <p>Gaza rescuers say 770 people killed in Israel assault in the north.</p>
+                <p style="font-size: small; color: gray;">Updated about an hour ago</p>
+            </div>
+
+            <div>
+                <h2><a style="color: black; font-size: 15px; text-decoration-line: none;"
+                        href="https://www.dawn.com/news/1867285">Editorial: It is hoped under Justice Afridi, SC can
+                        heal fractures that developed under CJP Isa’s watch</a></h2>
+                <img width="50%" src="https://i.dawn.com/medium/2024/10/24090459ddd8345.jpg?r=090510"
+                    alt="Editorial Image">
+            </div>
+
+        </div>
+
+        
+        <!-- Right Section -->
+        <div class="right-section">
+
+            <div class="article">
+                <h2><a href="https://www.dawn.com/live/gaza-invasion">US, Qatar announce new Gaza talks as Blinken eyes
+                        new options</a></h2>
+                <img src="https://i.dawn.com/medium/2024/10/2315181640c3c98.jpg?r=151835" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, inventore, officiis explicabo animi
+                    voluptatibus deleniti labore quam consequuntur quasi omnis autem enim culpa porro fugit dolores
+                    exercitationem molestias dolor libero.</p>
+                <p style="font-size: small; color: gray;">Updated about an hour ago</p>
+            </div>
+
+            <div class="article"><a href="https://www.dawn.com/live/gaza-invasion" target="_self"
+                    title="Palestine Foreign Affairs Ministry holds UN Security Council accountable for failures on Gaza">
+                    <picture><img
+                            alt="Palestine Foreign Affairs Ministry holds UN Security Council accountable for failures on Gaza"
+                            src="https://i.dawn.com/medium/2024/10/2315181640c3c98.jpg?r=151835"
+                            title="Palestine Foreign Affairs Ministry holds UN Security Council accountable for failures on Gaza" />
+
+                    </picture>
+                </a>
+                <p>UNRWA staff killed in Israeli strike in Deir el-Balah, Gaza.</p>
+            </div>
+
+        </div>
+
+        
+
+        <!-- Right Section -->
+        <div class="third-section">
+
+
+
+            <div>
+
+                <article class="article-container">
+                    <div class="article-text">
+                        <h2><a style="color: black; text-decoration-line: none;" href="https://www.dawn.com/news/1868136">26th Amendment: Drafted elsewhere, deliberated
+                                by a select few, passed in supreme haste</a></h2>
+                    </div>
+                    <figure>
+                        <img class="article-image"
+                            src="https://i.dawn.com/thumbnail/2024/10/280902087bcaf12.png?r=091446" alt="Article Image">
+                    </figure>
+                </article>
+                <hr style="margin-left: 0; width: 250px;">
+
+                <article class="article-container">
+                    <div class="article-text">
+                        <h2><a style="color: black; text-decoration-line: none;" href="https://www.dawn.com/news/1867906">Editorial: Next phase of this geopolitical
+                                tussle will depend on Iran’s reaction to Israeli provocation</a></h2>
+                    </div>
+                    <figure>
+                        <img class="article-image"
+                            src="https://i.dawn.com/thumbnail/2024/10/2708510276d83f6.png?r=085124" alt="Article Image">
+                    </figure>
+                </article>
+
+                <hr style="margin-left: 0; width: 250px;">
+                <article class="article-container">
+                    <div class="article-text">
+                        <h2><a  style="color: black; text-decoration-line: none;"
+                                href="https://images.dawn.com/news/1192891/mayor-murtaza-wahab-inaugurates-fourth-karachi-biennale">Mayor
+                                Murtaza Wahab inaugurates Fourth Karachi Biennale</a></h2>
+                    </div>
+                    <figure>
+                        <img class="article-image"
+                            src="https://i.dawn.com/thumbnail/2024/10/28114721b9840f7.png?r=114736" alt="Article Image">
+                    </figure>
+                </article>
+
+                <hr style="margin-left: 0; width: 250px;">
+                <article class="article-container">
+                    <div class="article-text">
+                        <h2><a  style="color: black; text-decoration-line: none;"
+                                href="https://aurora.dawn.com/news/1145245/converging-business-sustainability-with-climate-resilience">Building
+                                a climate-resilient Pakistan</a></h2>
+                    </div>
+                    <figure>
+                        <img class="article-image"
+                            src="https://i.dawn.com/thumbnail/2024/10/2810473769cd7e7.png?r=104802" alt="Article Image">
+                    </figure>
+                </article>
+
+                <hr style="margin-left: 0; width: 250px;">
+                <article class="article-container">
+                    <div class="article-text">
+                        <h2><a style="color: black; text-decoration-line: none;" href="https://www.dawn.com/news/1867605/the-year-of-qazi-maverick-in-freefall">The year
+                                of Qazi: maverick in freefall</a></h2>
+                    </div>
+                    <figure>
+                        <img class="article-image"
+                            src="https://i.dawn.com/thumbnail/2024/10/2612440727bc8f0.png?r=124647" alt="Article Image">
+                    </figure>
+                </article>
+
+                <hr style="margin-left: 0; width: 250px;">
+                <article class="article-container">
+                    <div class="article-text">
+                        <h2><a style="color: black; text-decoration-line: none;" href="https://www.dawn.com/news/1868047">As Brics summit concludes, Russia and China push
+                                for changing global financial system</a></h2>
+                    </div>
+                    <figure>
+                        <img class="article-image"
+                            src="https://i.dawn.com/thumbnail/2024/10/28101341f47d6e5.jpg?r=101347" alt="Article Image">
+                    </figure>
+                </article>
+
+                <hr style="margin-left: 0; width: 250px;">
+                <article class="article-container">
+                    <div class="article-text">
+                        <h2><a style="color: black; text-decoration-line: none;" href="https://www.dawn.com/news/1868102">Biocontrol agents may be best to deal with
+                                noxious Parthenium weeds threatening food crops</a></h2>
+                    </div>
+                    <figure>
+                        <img class="article-image"
+                            src="https://i.dawn.com/thumbnail/2024/10/280807078dd419c.jpg?r=095020" alt="Article Image">
+                    </figure>
+                </article>
+
+                <hr style="margin-left: 0; width: 250px;">
+                <article class="article-container">
+                    <div class="article-text">
+                        <h2><a style="color: black; text-decoration-line: none;" href="https://www.dawn.com/news/1868101/grid-based-battery-energy-storage-solutions">Grid-based
+                                battery energy storage solutions</a></h2>
+                    </div>
+                    <figure>
+                        <img class="article-image"
+                            src="https://i.dawn.com/thumbnail/2024/10/280817490bf27de.jpg?r=081754" alt="Article Image">
+                    </figure>
+                </article>
+
+
+
+
+
+
+
+
+
+            </div>
+        
+            <hr style="size: 2px; color: gray; width: 550px; margin-right: 0;">
+
+
+        </div>
+        
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
+        <div>
+            <img src="https://www.dawn.com/_img/logo-white.png" alt="Dawn Logo">
+        </div>
+        <div>
+            <a href="https://whatsapp.com/channel/0029VaMc238IiRov8okfYy3n"><img alt="WhatsApp" height="20"
+                    src="https://i.dawn.com/thumbnail/2024/02/080925032506f93.png"></a>
+            <a href="https://twitter.com/dawn_com"><img alt="Twitter" style="height:17px;"
+                    src="https://i.dawn.com/large/2024/02/16125537351049d.png"></a>
+            <a href="https://www.facebook.com/dawndotcom"><img alt="Facebook" width="20" height="20"
+                    src="https://i.dawn.com/thumbnail/2019/02/5c611c42cf5e8.png"></a>
+            <a href="https://www.instagram.com/dawn.today/"><img alt="Instagram" width="20" height="20"
+                    src="https://i.dawn.com/thumbnail/2019/02/5c611c430f9b2.png"></a>
+            <a href="https://itunes.apple.com/pk/app/dawn-official-mobile-app/id935631940"><img alt="Apple" width="20"
+                    height="34" src="https://i.dawn.com/thumbnail/2019/02/5c611c42d5669.png"></a>
+            <a href="https://play.google.com/store/apps/details?id=com.mictronicx.dawn"><img alt="Android" width="20"
+                    height="34" src="https://i.dawn.com/thumbnail/2019/02/5c611c42ce48d.png"></a>
+            <a href="https://appgallery.huawei.com/#/app/C104007373"><img alt="Huawei App Gallery" width="100"
+                    height="30" src="https://i.dawn.com/thumbnail/2021/05/60a360ab86d68.png"></a>
+        </div>
+    </footer>
+</body>
+
+</html>
